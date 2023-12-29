@@ -6,7 +6,7 @@
             <h2>This is Profile page</h2>
             <div class="p-3">
                 <h5>User Name : {{user}}</h5>
-                <h5>First Name : {{user.first_name}}</h5>
+                {% comment %} <h5>First Name : {{user.first_name}}</h5> {% endcomment %}
                 <a class='btn btn-warning btn-small text-white fw-bold m-5' href="{% url 'pass_change'%}">Change Password</a>
                 <a class='btn btn-warning btn-small text-white fw-bold m-5' href="{% url 'pass_change_without'%}">Change Password Without Previous Pass</a>
 

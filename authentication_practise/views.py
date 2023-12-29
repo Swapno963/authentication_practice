@@ -13,7 +13,7 @@ def register(request):
         if register_form.is_valid():
             register_form.save()
             messages.success(request, 'Register Successfully.')
-            return redirect('profile ')
+            return redirect('profile')
     else:
         register_form = forms.RegistrationForm()
     return render(request, 'register.html',{'form':register_form, 'type':'Register'})

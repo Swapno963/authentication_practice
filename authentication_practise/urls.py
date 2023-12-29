@@ -20,10 +20,11 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/',views.user_login, name ='user_longin'),
-    path('signup/',views.register, name ='signup'),
+    path('',views.register, name ='signup'),
     path('logout/',views.user_logout, name ='user_logout'),
     path('profile/',views.user_profile, name ='profile'),
     path('profile/pass_change',views.pass_change, name ='pass_change'),
     path('profile/pass_change_wihtout',views.pass_chang_without, name ='pass_change_without'),
 ]
+
 
